@@ -121,3 +121,40 @@ print(as.character(9999123))
 print(as.numeric("23/06/1999"))
 
 print(as.character(7+5i))
+
+
+
+
+num1 <- as.numeric(67L) 
+num1
+
+num2 <- as.numeric(6+9i)
+num2
+
+
+num2 <- as.numeric('abcd123')
+# "NA"
+
+num3 <- as.numeric("1234")
+num3
+
+int1 <- as.integer(129.678)
+int1
+
+int2 <- as.integer(6+7i)
+int2
+
+
+com1 <- as.complex(FALSE)
+com1
+
+log1 <- as.logical(124.675)
+log1
+
+
+log2 <- as.logical(FALSE)
+log2
+
+
+char1 <- as.character(TRUE)
+char1
