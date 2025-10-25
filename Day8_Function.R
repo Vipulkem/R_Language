@@ -256,10 +256,63 @@ vowel_count <- function(text){
 vowel_count("this is my 1st R Language String !!!!")
 
 
+# function to check number is prime or not 
+
+prime_num <- function(num){
+  if(num<=1) return(FALSE)
+  for (i in 2:sqrt(num)){
+    if (num%%i==0){
+      return(FALSE)
+    }
+  return(TRUE)
+  }
+}
+
+prime_num(23)
 
 
 
+# function to get the grade
+
+grade <- function(marks){
+  if (marks >= 90) return("A")
+  else if (marks >= 80) return("B")
+  else if (marks >= 70) return("C")
+  else if (marks >= 60) return("D")
+  else return("Fail")
+}
+
+grade(78)
+grade(48)
 
 
+# function to check number is palindrome or not
+
+is_palindrome <- function(str){
+  str <- tolower(str)
+  
+  return(str == paste(rev(strsplit(str,NULL)[[1]]),collapse = ""))
+  
+}
+is_palindrome("Level")
+
+
+# function to count element greater than the value
+
+count_grater <- function(vec,num){
+  return(sum(vec>num))
+}
+
+count_grater(c(342,64,23,56,43,543,63,45,25,34,65,43,4524,4,5,43,62,464,62,35,36,32,3),44)
+
+
+# function to calculater stdv.
+
+manual_stdv <- function(x) {
+  n <- length(x)
+  mean_x <- sum(x) / n
+  sqrt(sum((x - mean_x)^2) / (n - 1))
+}
+manual_stdv(c(2, 4, 6, 8, 10))
 
 
