@@ -39,6 +39,28 @@ char_vect <- c("dds","fkr","akash","ravi","ccsu","svsu")
 class(char_vect)
 
 
+# Note :- Elements of the vector are known as component.
+
+## Creating vector by different types -----
+
+# 1. using the: operator -
+
+ver <- -7:7
+ver
 
 
+# 2. using sequence function
+#  syntax ---    var_name <- seq(start_range,end_range)
 
+sequence_vector <- seq(1,5)
+sequence_vector
+
+#  syntax ---    var_name <- seq(start_range,end_range,by = jump_value)
+
+seq_vector <- seq(1,45,7)
+seq_vector
+
+#  syntax ---    var_name <- seq(start_range,end_range,length.out = split_value)
+
+vext <- seq(1,9,length.out=5)
+vext
